@@ -1,0 +1,27 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5em;
+}
+
+.container img {
+  width: 25%;
+}
+
+.container h1 {
+  color: #3d0a49;
+  font-weight: bolder;
+  font-size: 48px;
+}
+
+.container p {
+  padding: 2em;
+}
+
+.container h2 {
+  color: #3d0a49;
+}

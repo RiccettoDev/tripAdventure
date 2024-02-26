@@ -1,0 +1,34 @@
+.container {
+  background-color: #3d0a49;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  padding-right: 5em;
+  box-shadow: 0 0 4px 5px #5015bd;
+}
+
+.container img {
+  width: 120px;
+  margin-left: 50px;
+}
+
+.container ul {
+  list-style-type: none;
+}
+
+.container ul li{
+  display: inline-block;
+  padding: 0 2em;
+}
+
+.container ul li a {
+  color: #fff;
+  font-weight: bolder;
+}
+
+.container ul li a:hover {
+  opacity: 70%;
+  cursor: pointer;
+}
