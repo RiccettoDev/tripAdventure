@@ -1,34 +1,172 @@
 .container {
   background-color: #3d0a49;
-  width: 100%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 1em;
-  padding-right: 5em;
-  box-shadow: 0 0 4px 5px #5015bd;
+  justify-content: space-between;
+  padding: 0 7em;
+  box-shadow: 0 0 40px 0px #ffffff1d;
 }
 
-.container img {
-  width: 120px;
-  margin-left: 50px;
+.logoContainer a img {
+  width: 180px;
+  height: 180px;
+  margin-left: -4em;
 }
 
-.container ul {
+.logoContainer a img:hover {
+  opacity: 50%;
+}
+
+.navibar ul {
   list-style-type: none;
 }
 
-.container ul li{
+.navibar ul li {
   display: inline-block;
   padding: 0 2em;
 }
 
-.container ul li a {
+.navibar ul li a {
   color: #fff;
-  font-weight: bolder;
+  cursor: pointer;
+  font-size: 18px;
 }
 
-.container ul li a:hover {
-  opacity: 70%;
-  cursor: pointer;
+.navibar ul li a:hover {
+  color: #918f8f;
+}
+
+/*--------Menu Mobile-----------*/
+
+.menuMobile {
+  width: 0%;
+  color: #fff;
+  background-color: #242424;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 99999;
+  overflow: hidden;
+}
+
+.menuMobileActive {
+  width: 70%;
+  color: #fff;
+  background-color: #242424;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 99999;
+  overflow: hidden;
+  transition: .3s ease-in;
+}
+
+.menuMobileActive ul {
+  list-style-type: none;
+  text-align: right;
+  padding: 2em;
+  margin-top: -2em;
+}
+
+.menuMobileActive ul li {
+  font-size: 24px;
+  padding: .4em;
+}
+
+.menuMobileActive ul li:hover {
+  background-color: #e0daf7;
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px #e0daf7, 0px 0px 10px;
+  border: 2px solid #e0daf7;
+  color: #242424;
+}
+
+.btnFechar {
+  width: 15%;
+  height: 8%;
+  font-size: 24px;
+  padding: 1em;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 1em;
+  box-shadow: 0px 0px 15px #e0daf7, 0px 0px 10px;
+  border: 2px solid #e0daf7;
+  color: #e0daf7;
+}
+
+.btnFechar:hover {
+  box-shadow: 0px 0px 15px #e0daf7, 0px 0px 10px;
+  border: 2px solid #e0daf7;
+  background-color: #e0daf7;
+}
+
+.overlayMenu {
+  background-color: #0000008f;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 8888;
+  display: none;
+}
+
+.overlayMenuActive {
+  background-color: #0000008f;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 8888;
+}
+
+/*------------Burguer Menu---------------*/
+
+.burguerMenu {
+  width: 150px;
+  height: 150px;
+  padding: 3.5em;
+  margin-right: -3em;
+}
+
+.line {
+  background-color: #e0daf7;
+  width: 50px;
+  height: 2px;
+  margin: .8em;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+@media screen and (max-width: 1080px){
+  .navibar, .btn{
+    display: none;
+  }
+
+  .container{
+    height: 20%;
+    display: flex;
+    padding: 3em;
+  }
+
+  .container a img {
+    width: 120px;
+    height: 120px;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1080px){
+  .burguerMenu {
+    display: none;
+  }
 }
