@@ -41,3 +41,28 @@
   opacity: 70%;
   transition: .5s;
 }
+
+@media screen and (max-width: 1080px){
+  .container{
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .containerInfo{
+    width: 100%;
+    flex-direction: column;
+    background-color: transparent;
+  }
+
+  .overlay{
+    flex-direction: column-reverse;
+    padding: 1em;
+    margin-top: -2em;
+    border-radius: 1px;
+    background-color: transparent;
+  }
+
+  .overlay img {
+    width: 350px;
+  }
+}

@@ -1,16 +1,24 @@
 import Start from './Start'
 import Destiny from './Destiny'
+import Testimony from './Testimony'
+import Contact from './Contact'
 
 import styles from './home.module.css'
 
 export default function Home() {
   return (
     <div className={styles.container}>
-      <div className={styles.subcontainer}>
+      <div id="Start" className={styles.subcontainer}>
         <Start />
       </div>
-      <div className={styles.subcontainer2}>
+      <div id="Destiny" className={styles.subcontainer2}>
         <Destiny />
+      </div>
+      <div id="Testimony">
+        <Testimony />
+      </div>
+      <div id="contact" className={styles.contact}>
+        <Contact />
       </div>
     </div>
   )

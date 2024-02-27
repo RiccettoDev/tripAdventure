@@ -1,0 +1,16 @@
+.container {
+  background-color: #3d0a49;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 5em;
+  padding-right: 3em;
+  box-shadow: 0 0 40px 0px #ffffff1d;
+  margin-top: 2em;
+  height: 50px;
+}
+
+.container h5 {
+  color: #fff;
+}

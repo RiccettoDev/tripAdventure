@@ -1,0 +1,95 @@
+.containerContact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 5em;
+  padding-right: 3em;  
+  padding-top: 6em;
+}
+
+.title {
+  background-color: #e0daf7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  border-radius: 25px;
+  box-shadow: 0 0 2px 3px #5015bd;
+  opacity: 80%;
+  margin-bottom: 4em;
+  margin-top: -5em;
+}
+
+.title h2 {
+  padding: .5em;
+  color: #5015bd;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.form {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.imput {
+  width: 100%;
+  padding: 1em;
+  margin: .5em;
+  border: 0;
+  border-radius: 10px;
+  background-color: #5015bd;
+  color: #fff;
+  font-weight: bold;
+  box-shadow: 0px 0px 15px #3d0a49, 0px 0px 10px;
+  border: 2px solid #3d0a49;
+}
+
+.imput::placeholder {
+  color: #fff;
+}
+
+.imputBtn {
+  margin: .5em;
+  background-color: #3d0a49;
+  border-radius: 30px;
+  padding: .2em 1em;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0px 0px 15px #3d0a49, 0px 0px 10px;
+  border: 2px solid #3d0a49;
+  margin-bottom: 2em;
+}
+
+.imputBtn:hover {
+  transform: scale(1.05);
+  color: #fff;
+}
+
+.btnEnviar:hover {
+  color: #918f8f;
+}
+
+@media screen and (max-width: 1080px){
+
+  .title {
+    width: 100%;
+    margin-top: .2em;
+  }
+
+  .containerContact{
+    width: 100%;
+    padding: 2em;
+  }
+  
+  .form {
+    width: 100%;
+  }
+}

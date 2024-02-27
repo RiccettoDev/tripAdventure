@@ -1,3 +1,5 @@
+import { Link } from 'react-scroll'
+
 import logo from '../../img/logo.png'
 
 import styles from './header.module.css'
@@ -8,16 +10,52 @@ export default function Header() {
       <img src={logo} alt="Logo" />
       <ul>
         <li>
-          <a>Inicio</a>
+          <Link
+            activeClass="active"
+            to="Start"
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={500}
+          >
+            Inicio
+          </Link>
         </li>
         <li>
-          <a>Destinos</a>
+          <Link
+            activeClass="active"
+            to="Destiny"
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={500}
+          >
+            Destinos
+          </Link>
         </li>
         <li>
-          <a>Avaliações</a>
+          <Link
+            activeClass="active"
+            to="Testimony"
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={500}
+          >
+            Avaliações
+          </Link>
         </li>
         <li>
-          <a>Galeria</a>
+          <Link
+            activeClass="active"
+            to="Contact"
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={500}
+          >
+            Contato
+          </Link>
         </li>
       </ul>
     </div>
