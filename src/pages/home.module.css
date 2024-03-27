@@ -22,8 +22,6 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-image: url('../img/poster2.jpg');
-  background-size: cover;
   border-radius: 5px;
   box-shadow: 0 0 4px 5px #5015bd;
   margin-top: 1em;
@@ -31,4 +29,8 @@
 
 .contact {
   width: 100%;
+}
+
+body{
+  overflow-x: hidden;
 }

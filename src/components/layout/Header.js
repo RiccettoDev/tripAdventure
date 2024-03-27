@@ -44,18 +44,6 @@ export default function Header() {
           <li>
             <Link
               activeClass="active"
-              to="Destiny"
-              spy={true}
-              smooth={true}
-              offset={50}
-              duration={500}
-            >
-              Destinos
-            </Link>
-          </li>
-          <li>
-            <Link
-              activeClass="active"
               to="Testimony"
               spy={true}
               smooth={true}
@@ -103,19 +91,6 @@ export default function Header() {
                 onClick={closeMenuBurguer}
               >
                 Inicio
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="active"
-                to="Destiny"
-                spy={true}
-                smooth={true}
-                offset={-50}
-                duration={500}
-                onClick={closeMenuBurguer}
-              >
-                Destinos
               </Link>
             </li>
             <li>

@@ -11,9 +11,6 @@ export default function Home() {
       <div id="Start" className={styles.subcontainer}>
         <Start />
       </div>
-      <div id="Destiny" className={styles.subcontainer2}>
-        <Destiny />
-      </div>
       <div id="Testimony">
         <Testimony />
       </div>
